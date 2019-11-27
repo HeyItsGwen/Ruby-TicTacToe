@@ -11,5 +11,6 @@ files:
     - 'normalize.css'
     - 'reboot.css'
     - 'reset.css'
+    - "spec/spec_helper.rb"
 fixers:
   enable: true
