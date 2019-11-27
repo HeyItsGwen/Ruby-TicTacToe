@@ -1,7 +1,8 @@
 # frozen_string_literal: true
 
 class TicTacToe
-  attr_reader :board, :player
+  attr_reader :player
+  attr_accessor :board, :filled
 
   def initialize
     @board = Array.new(9)
