@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class TicTacToe
   attr_reader :board, :player
 
@@ -44,6 +46,7 @@ class TicTacToe
 
   def make_move(square)
     return false unless square.positive? && square <= 9
+
     index = square - 1
     if @board[index] == ' '
       @board[index] = @player
